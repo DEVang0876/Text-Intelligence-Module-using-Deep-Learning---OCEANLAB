@@ -1,0 +1,9 @@
+tensorflow
+tensorflow-datasets
+pandas
+numpy
+scikit-learn
+nltk
+jupyter
+flask
+gunicorn

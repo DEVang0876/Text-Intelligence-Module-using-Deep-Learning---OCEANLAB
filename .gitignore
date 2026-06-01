@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+env/
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data
+*.csv
+*.json
+data/
+
+# Model files
+*.h5
+*.keras
+models/
+
+# IDE specific
+.vscode/
+.idea/
