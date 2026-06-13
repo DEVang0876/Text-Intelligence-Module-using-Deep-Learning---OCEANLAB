@@ -1,0 +1,42 @@
+2026-06-13 09:35:06,605 - src.logger - INFO - Predicting for text: 'Bengal elections goes beyond expectations, all eye...'
+2026-06-13 09:35:13,838 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 09:35:14,749 - src.logger - INFO - Prediction: Sci/Tech (3)
+2026-06-13 09:35:51,398 - src.logger - INFO - Loading data from /Users/apple/Documents/PROJECT/Text-Intelligence-Module-using-Deep-Learning---OCEANLAB/data/train.csv
+2026-06-13 09:35:51,732 - src.logger - INFO - Preprocessing text data...
+2026-06-13 09:35:59,616 - src.logger - INFO - None
+2026-06-13 09:36:19,578 - src.logger - INFO - Predicting for text: 'RCB won the IPL back to back after 18 years of fal...'
+2026-06-13 09:36:19,578 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 09:36:20,642 - src.logger - INFO - Prediction: Sci/Tech (3)
+2026-06-13 09:40:21,675 - src.logger - INFO - Predicting for text: '16 year old Girl Gangraped by cousins...'
+2026-06-13 09:40:21,676 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 09:40:22,615 - src.logger - INFO - Prediction: Sports (1)
+2026-06-13 09:40:49,691 - src.logger - INFO - Predicting for text: 'Business goes beyond, 1 trillion net worth of Musk...'
+2026-06-13 09:40:49,691 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 09:40:50,631 - src.logger - INFO - Prediction: Sci/Tech (3)
+2026-06-13 09:45:34,631 - src.logger - INFO - Predicting for text: 'fuck you doggy style...'
+2026-06-13 09:45:34,633 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 09:45:35,451 - src.logger - INFO - Prediction: Sci/Tech (3)
+2026-06-13 09:45:55,243 - src.logger - INFO - Predicting for text: 'Big step towards sports in India...'
+2026-06-13 09:45:55,243 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 09:45:55,952 - src.logger - INFO - Prediction: Business (2)
+2026-06-13 10:07:15,155 - src.logger - INFO - LSTM validation loss: 0.27017176151275635
+2026-06-13 10:07:15,156 - src.logger - INFO - LSTM validation accuracy: 0.9104166626930237
+2026-06-13 10:07:15,944 - src.logger - INFO - LSTM model, tokenizer, and metadata saved successfully.
+2026-06-13 10:07:25,443 - src.logger - INFO - Loading test data from /Users/apple/Documents/PROJECT/Text-Intelligence-Module-using-Deep-Learning---OCEANLAB/data/test.csv
+2026-06-13 10:07:25,683 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 10:07:39,580 - src.logger - INFO - Test accuracy: 0.9094736842105263
+2026-06-13 10:11:42,274 - src.logger - INFO - Predicting for text: 'Big step towards sports in India...'
+2026-06-13 10:11:42,275 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 10:11:43,174 - src.logger - INFO - Prediction: Sports (1)
+2026-06-13 10:11:45,684 - src.logger - INFO - Predicting for text: 'Big step towards sports in India...'
+2026-06-13 10:11:45,685 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 10:11:46,503 - src.logger - INFO - Prediction: Sports (1)
+2026-06-13 10:12:08,792 - src.logger - INFO - Predicting for text: 'Gang rape in UP Mirzapur...'
+2026-06-13 10:12:08,792 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 10:12:09,632 - src.logger - INFO - Prediction: Sports (1)
+2026-06-13 10:12:09,680 - src.logger - INFO - Predicting for text: 'Gang rape in UP Mirzapur...'
+2026-06-13 10:12:09,680 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 10:12:10,491 - src.logger - INFO - Prediction: Sports (1)
+2026-06-13 10:12:32,696 - src.logger - INFO - Predicting for text: 'Gold up by 30% in just a month...'
+2026-06-13 10:12:32,697 - src.logger - INFO - Loading the LSTM model and tokenizer.
+2026-06-13 10:12:33,521 - src.logger - INFO - Prediction: Business (2)

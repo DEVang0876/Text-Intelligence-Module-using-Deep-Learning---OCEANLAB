@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib
 import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-from tensorflow.keras.layers import Bidirectional, Dense, Dropout, Embedding, LSTM, SpatialDropout1D
+from tensorflow.keras.layers import Bidirectional, Dense, Dropout, Embedding, Input, LSTM, SpatialDropout1D
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
@@ -98,6 +98,7 @@ def build_lstm_model(num_classes):
     Builds an improved LSTM classifier for AG News text classification.
     """
     model = Sequential([
+        Input(shape=(MAX_SEQUENCE_LENGTH,)),
         Embedding(input_dim=MAX_NUM_WORDS, output_dim=EMBEDDING_DIM),
         SpatialDropout1D(0.2),
         Bidirectional(LSTM(LSTM_UNITS, dropout=0.2, recurrent_dropout=0.2)),
