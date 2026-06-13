@@ -2,6 +2,62 @@
 
 This project is a 28-day internship task to build a Text Intelligence Module using Deep Learning. The goal is to create a text classification model that can categorize news articles into different topics.
 
+## Current Industry-Ready Workflow
+
+The repository now supports the complete model lifecycle for the AG News dataset:
+
+1. Download or refresh the dataset:
+
+```bash
+python -m src.download_dataset
+```
+
+2. Train the main deep learning model:
+
+```bash
+python -m src.train --model-type lstm
+```
+
+For a fast smoke run while developing:
+
+```bash
+python -m src.train --model-type lstm --sample-size 4000 --epochs 1
+```
+
+3. Evaluate the trained model on the held-out test set:
+
+```bash
+python -m src.evaluate
+```
+
+This writes `reports/classification_report.json`, `reports/confusion_matrix.csv`, and `reports/evaluation_summary.json`.
+
+4. Run a single prediction:
+
+```bash
+python -m src.predict
+```
+
+5. Start the Flask application:
+
+```bash
+flask --app app.main run
+```
+
+The app exposes:
+
+- `GET /health` for service health checks.
+- `POST /predict` with JSON body `{"text": "..."}` for API prediction.
+- `GET /` for a simple browser interface.
+
+## Model Approach
+
+- Baseline: TF-IDF features with Logistic Regression, kept available through `python -m src.train --model-type baseline`.
+- Main model: Embedding layer, SpatialDropout, Bidirectional LSTM, dense classification head, early stopping, learning-rate reduction, and model checkpointing.
+- Classes: `World`, `Sports`, `Business`, `Sci/Tech`.
+
+Generated datasets, model files, logs, and reports are intentionally kept out of version control.
+
 ## Project Plan
 
 ### Week 1: Project Setup & Data Foundation (Days 1-7)

@@ -10,6 +10,8 @@ def setup_logger():
     """
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
+    if logger.handlers:
+        return logger
     
     # Create handlers
     f_handler = logging.FileHandler(LOG_FILE_PATH)
